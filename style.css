@@ -1,0 +1,160 @@
+* {
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+p{
+  line-height: 1.5;
+}
+img{
+  width: 100%;
+}
+body {
+  padding: 1rem;
+  background: #33135c;
+}
+
+
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
+header {
+  background: url(img/header-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+header nav {
+  color: #fff;
+  height: 80px;
+  display: flex;
+  padding: 0 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+  nav .costumer-service {
+    font-weight: bold;
+  }
+
+.jumbotron {
+  margin-top: -80px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.jumbotron .jumbotron-content {
+  text-align: center;
+  color: #fff;
+}
+.jumbotron-content > * {
+  margin-bottom: 1.2rem;
+}
+.jumbotron-content h1 {
+  font-size: 2rem;
+}
+.jumbotron-content p {
+  font-size: .9rem;
+  font-weight: 300;
+}
+.jumbotron-content .cta-btn {
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: .8rem 1.8rem;
+  background: rgba(74,80,20,.5);
+}
+
+
+
+/* about section */
+.about {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 6rem 4rem;
+}
+.about .stroke-text {
+  font-size: 9rem;
+  position: absolute;
+  color: rgba(0,0,0,0);
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: white;
+  top: 0;
+  right: -30px;
+  z-index: -1;
+}
+.about .img-about {
+  transform: translatex(1.5rem);
+  width: 50%;
+  height: 100%;
+}
+.about .text-about {
+  transform: translate(-1.5rem,3rem);
+  width: 55%;
+  color: #fff;
+  padding: 3rem 5rem 3rem 3rem;
+  background: rgba(63,114,172,1); ;
+}
+.text-about > * {
+  margin-bottom: 1.3rem;
+}
+.text-about h3 {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.text-about p {
+  font-size: .8rem;
+  font-weight: 200;
+}
+
+.text-about a {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: .5rem;
+  font-size: .6rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+  nav .costumer-service {
+    display: none;
+  }
+  .jumbotron {
+    padding: 1rem;
+    height: calc(100vh - 80px);
+  }
+  .jumbotron-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .about {
+    display: block;
+    padding: .5rem;
+  }
+  .about .stroke-text {
+    display: none;
+  }
+  .about .text-about, .about .img-about{
+    width: 100%;
+    transform: translate(0);
+  }
+  .about .text-about {
+   padding: 2rem;
+  }
+  .text-about h3 {
+   font-size: 1.5rem;
+  }
+  .text-about p {
+   font-size: 1rem;
+  }
+  .text-about a {
+   font-size: 1rem;
+  }
+}

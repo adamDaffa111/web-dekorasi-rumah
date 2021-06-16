@@ -9,5 +9,5 @@ HTML & CSS
 
 ![IMG_20210616_215515](https://user-images.githubusercontent.com/78966039/122246158-855efd80-cef0-11eb-93cf-82dd9f2adaa5.jpg)
 
-![Screenshot_2021-06-16-21-55-55-11](https://user-images.githubusercontent.com/78966039/122246169-87c15780-cef0-11eb-9433-92d8003d0661.png)
+
 
